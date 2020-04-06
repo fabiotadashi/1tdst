@@ -18,7 +18,7 @@ public class Calculadora {
         int resultado = 0;
 
         if (operacao.equals("+")) {
-            System.out.println("SOMA");
+            resultado = numeroInformado + outroNumeroInformado;
         }
         if (operacao.equals("-")) {
             resultado = numeroInformado - outroNumeroInformado;
