@@ -1,3 +1,5 @@
+package java_sem_classes;
+
 import java.util.Random;
 
 public class ExercicioOperadores {

@@ -1,3 +1,5 @@
+package java_sem_classes;
+
 public class ExercicioRepeticao {
 
     public static void main(String[] args) {
