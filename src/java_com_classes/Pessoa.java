@@ -11,6 +11,13 @@ public class Pessoa {
     private LocalDate dataNascimento;
     private String telefone;
 
+    public Pessoa(int idade) {
+        this.idade = idade;
+    }
+
+    public Pessoa(){}
+
+
     // métodos
     public void exibirDados() {
         System.out.println("Nome: " + getNome());
