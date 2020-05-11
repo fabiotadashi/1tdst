@@ -1,4 +1,4 @@
-package resolucao_strings_livro;
+package resolucao_strings;
 
 public class Livro {
 
