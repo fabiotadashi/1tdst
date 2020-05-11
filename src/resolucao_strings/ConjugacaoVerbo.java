@@ -19,7 +19,7 @@ public class ConjugacaoVerbo {
             palavra = scanner.next();
 
             if (palavra.endsWith("ar")) {
-                String palavraConjugada = palavra.replace("ar", "ou");
+                String palavraConjugada = palavra.substring(0, palavra.length() - 2).concat("ou");
                 System.out.println(palavraConjugada);
             } else {
                 System.out.println("Palavra inválida. Por favor, digite uma palavra terminada em \"ar\"");
