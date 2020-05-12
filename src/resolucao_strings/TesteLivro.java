@@ -7,16 +7,13 @@ public class TesteLivro {
     public static void main(String[] args) {
 
         // Criar instância da classe Livro
-        Livro livro = new Livro();
-
-        // Definir valores dos atributos
-        livro.setTituloOriginal("Lords of the Rings");
-        livro.setTituloPortugues("Senhor dos Anéis");
-        livro.setAnoPublicacao(1954);
-        livro.setQuantidadeDePaginas(800);
-        livro.setEdicao("3a edição");
-        livro.setIsbn("1239871239823-12");
-        livro.setAutor("Tolkien");
+        Livro livro = new Livro("1239871239823-12",
+                "Lords of the Rings",
+                "Senhor dos Anéis",
+                "Tolkien",
+                800,
+                "3a edição",
+                1954);
 
         // Criar outra instância da classe Livro
         Livro livro1 = new Livro();
@@ -31,7 +28,7 @@ public class TesteLivro {
         livro1.setAutor("George R.R. Martin");
 
         JOptionPane.showMessageDialog(null, livro.pegarTitulos());
-        JOptionPane.showMessageDialog(null, livro1.pegarTitulos());
+        JOptionPane.showMessageDialog(null, livro1.pegarTitulos(), "Livraria", JOptionPane.INFORMATION_MESSAGE);
 
     }
 

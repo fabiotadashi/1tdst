@@ -11,6 +11,22 @@ public class Livro {
     private String edicao;
     private int anoPublicacao;
 
+    // construtores
+    public Livro(){}
+
+    public Livro(String isbn, String tituloOriginal, String tituloPortugues,
+                 String autor, int quantidadeDePaginas, String edicao,
+                 int anoPublicacao) {
+        this.isbn = isbn;
+        this.tituloOriginal = tituloOriginal;
+        this.tituloPortugues = tituloPortugues;
+        this.autor = autor;
+        this.quantidadeDePaginas = quantidadeDePaginas;
+        this.edicao = edicao;
+        this.anoPublicacao = anoPublicacao;
+    }
+
+
     // métodos da classe
 
     public String pegarTitulos(){
