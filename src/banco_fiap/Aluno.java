@@ -1,12 +1,23 @@
 package banco_fiap;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Aluno {
+public class Aluno implements Serializable {
 
     private String nome;
     private LocalDate dataNascimento;
     private String cpf;
+
+    public Aluno(){
+
+    }
+
+    public Aluno(String nome, LocalDate dataNascimento, String cpf) {
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.cpf = cpf;
+    }
 
     public String getNome() {
         return nome;
